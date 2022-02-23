@@ -26,4 +26,11 @@
 
 <br>
 
+<div
+  class="map-flats"
+  data-controller="mapbox"
+  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"
+  data-mapbox-markers-value="<%= @markers.to_json  %>"
+></div>
+
 <%= link_to 'New Flat', new_flat_path %>
